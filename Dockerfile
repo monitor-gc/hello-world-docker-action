@@ -12,6 +12,5 @@ COPY python_entrypoint.py /python_entrypoint.py
 COPY python_entrypoint.sh /python_entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
-
-CMD ["/python_entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/python_entrypoint.sh"]
