@@ -1,3 +1,5 @@
 #!/bin/sh -l
 
-python3 /python_entrypoint.py >> $GITHUB_OUTPUT
+echo "Hello $1"
+time=$(python3 /python_entrypoint.py)
+echo "time=$time" >> $GITHUB_OUTPUT
